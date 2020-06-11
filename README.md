@@ -23,3 +23,46 @@ npm start
 At this point react is up and running.
 
 ### Creating a Hello World
+
+First I cut out all files except ```index.html```, ```App.js``` and ```index.js```.
+Then I cut down the code to a bare minimum so it just shows a hello world.
+
+This looks like this:
+
+App.js
+```JavaScript
+import React from 'react';
+
+class App extends React.Component {
+  render() {
+    return <h1>Hello World!</h1>;
+  }
+}
+
+export default App;
+```
+index.js
+```JavaScript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+index.html
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+
+    <div id="root"></div>
+
+  </body>
+</html>
+```
