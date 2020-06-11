@@ -1,8 +1,12 @@
 import React from 'react';
+import Projects from './Projects';
 
 class App extends React.Component {
   render() {
-    return <h1 >Hi, I'm Tom</h1>;
+    return <div>
+      <h1 >Hi, I'm Tom</h1>;
+      <Projects/>
+      </div>
   }
 }
 
