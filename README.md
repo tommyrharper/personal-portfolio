@@ -66,3 +66,17 @@ index.html
   </body>
 </html>
 ```
+
+## Adding some styling
+
+I wanted to add some styling, so I did some research and discovered I needed to use .scss files, this required the following command:
+```
+npm install node-sass
+```
+Then I created ```app.scss``` and added the following simple code:
+```CSS
+h1 {
+  text-align: center;
+}
+```
+There we are, we have begun styling!
