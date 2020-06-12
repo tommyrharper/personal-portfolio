@@ -67,7 +67,7 @@ index.html
 </html>
 ```
 
-## Adding some styling
+### Adding some styling
 
 I wanted to add some styling, so I did some research and discovered I needed to use .scss files, this required the following command:
 ```
@@ -81,7 +81,7 @@ h1 {
 ```
 There we are, we have begun styling!
 
-### Attempt at styling number two
+#### Attempt at styling number two
 
 Realising I had no idea what I was doing, and that I didn't actually need node-sass, I uninstalled it and decided I could acheive what I wanted with a simple flex-box.
 
@@ -89,7 +89,7 @@ I then changed ```app.scss``` to ```App.css```, and moved it so it is imported w
 
 Now I am ready to build it using a simple flex-box!
 
-## Dealing with routing
+### Dealing with routing
 
 ```
 npm install --save react-router-dom
@@ -98,3 +98,33 @@ npm install --save react-router-dom
 Then I created some new components - I created ```Home.js``` and ```Navigation.js```.
 
 Home.js is my homepage, and Navigation.js is my navigation bar at the top of the page.
+
+### Linking everything up
+
+Once I got this sorted, I linked up all my projects as buttons to their own webpages. In order to do this onClick, I had to use the following code:
+
+```JavaScript
+this.props.history.push(url);
+```
+
+This requires the use of a certain module called withRouter. It works like this.
+
+You place your app within your BrowserRouter
+
+```JavaScript
+ReactDOM.render(<BrowserRouter><App/></BrowserRouter>, document.getElementById('root'));
+```
+Then you use the following code in whichever component you want to redirect from using ```this.props.history.push(url)```
+```JavaScript
+import { withRouter } from 'react-router-dom';
+
+class Example extends React.Component {
+  render() {
+    return(
+      <div>Example</div>
+    ) 
+  }
+}
+
+export default withRouter(Example);
+```
