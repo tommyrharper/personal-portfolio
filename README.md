@@ -86,3 +86,5 @@ There we are, we have begun styling!
 Realising I had no idea what I was doing, and that I didn't actually need node-sass, I uninstalled it and decided I could acheive what I wanted with a simple flex-box.
 
 I then changed ```app.scss``` to ```App.css```, and moved it so it is imported within the App component.
+
+Now I am ready to build it using a simple flex-box!
