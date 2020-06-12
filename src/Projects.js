@@ -4,13 +4,14 @@ class Projects extends React.Component {
   render() {
     return(
       <div class="projects-container">
-        <div class="nested-container">
-          <div>Project 1</div>
-          <div>Project 2</div>
-          <div>Project 3</div>
-          <div>Project 4</div>
-          <div>Project 5</div>
-          <div>Project 6</div>
+        <div class="paddingBlock">
+          <div class="equalHMVWrap eqWrap">
+            <div class="equalHMV eq">Mission-Ctrl</div>
+            <div class="equalHMV eq">Bank Tech Test</div>
+            <div class="equalHMV eq">Thermostat</div>
+            <div class="equalHMV eq">Bowling-Scorecard</div>
+            <div class="equalHMV eq">Rock Paper Scissors</div>
+          </div>
         </div>
       </div>
     ) 
