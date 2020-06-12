@@ -2,26 +2,56 @@ h1 {
   text-align: center;
 }
 
-
-.nested-container {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 50%
-}
-
-.nested-container > div {
-  flex: 0 0 20%;
-  background-color: red;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
-
 .projects-container {
   display: flex;
   justify-content: center;
 }
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	
+	box-sizing: border-box; 
+}paddingBlock
+
+html, body  { 
+	height: 100%;
+	width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.paddingBlock {
+  padding: 20px 0;
+  width: 50%;
+}
+
+.eqWrap {
+	display: flex;
+}
+
+.eq {
+  padding: 10px;
+  background: yellow;
+}
+
+.equalHMVWrap {
+	flex-wrap: wrap;
+}
+
+.equalHMV {
+	width: 32%;
+	margin: 1%;
+}
+
+.equalHMV:nth-of-type(3n) {
+	margin-right: 0;	
+}
+
+.equalHMV:nth-of-type(3n+1) {
+	margin-left: 0;	
+}
+
