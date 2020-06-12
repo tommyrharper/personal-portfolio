@@ -1,6 +1,16 @@
 import React from 'react';
+import { NavLink, withRouter } from 'react-router-dom';
 
 class Projects extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { sent: "" };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick = () => {
+    this.props.history.push("/bank");
+  }
   render() {
     return(
       <div class="projects-container">
@@ -8,14 +18,14 @@ class Projects extends React.Component {
           <div class="projects">
             <div class="project" onClick="www.google.com">Mission-Ctrl
             </div>
-            <div class="project">
-              Bank Tech Test
+            <div class="project" onClick={() => { this.handleClick() }}>
+              Bank
             </div>
             <div class="project">
-              Thermostat
+            <NavLink to="/thermostat">Thermostat</NavLink>
             </div>
             <div class="project">
-              Bowling-Scorecard
+            <NavLink to="/bowling-scorecard">Bowling-Scorecard</NavLink>
             </div>
             <div class="project">
               Acebook-myspace
@@ -39,4 +49,4 @@ class Projects extends React.Component {
   }
 }
 
-export default Projects;
+export default withRouter(Projects);
