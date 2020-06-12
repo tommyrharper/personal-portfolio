@@ -2,14 +2,18 @@ import React from 'react';
 
 class Projects extends React.Component {
   render() {
-    return <div class="grid-container">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-    </div>
+    return(
+      <div class="projects-container">
+        <div class="nested-container">
+          <div>Project 1</div>
+          <div>Project 2</div>
+          <div>Project 3</div>
+          <div>Project 4</div>
+          <div>Project 5</div>
+          <div>Project 6</div>
+        </div>
+      </div>
+    ) 
   }
 }
 
