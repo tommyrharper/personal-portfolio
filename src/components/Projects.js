@@ -1,45 +1,41 @@
 import React from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 class Projects extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { sent: "" };
+  handleClick = (url) => {
+    this.props.history.push(url);
+  }
 
-    this.handleClick = this.handleClick.bind(this);
-  }
-  handleClick = () => {
-    this.props.history.push("/bank");
-  }
   render() {
     return(
-      <div class="projects-container">
-        <div class="paddingBlock">
-          <div class="projects">
-            <div class="project" onClick="www.google.com">Mission-Ctrl
+      <div className="projects-container">
+        <div className="paddingBlock">
+          <div className="projects">
+          <div className="project" onClick={() => {this.handleClick("/missionctrl")}}>
+              Mission-Ctrl
             </div>
-            <div class="project" onClick={() => { this.handleClick() }}>
+            <div className="project" onClick={() => {this.handleClick("/bank")}}>
               Bank
             </div>
-            <div class="project">
-            <NavLink to="/thermostat">Thermostat</NavLink>
+            <div className="project" onClick={() => {this.handleClick("/thermostat")}}>
+            Thermostat
             </div>
-            <div class="project">
-            <NavLink to="/bowling-scorecard">Bowling-Scorecard</NavLink>
+            <div className="project" onClick={() => {this.handleClick("/bowling")}}>
+              Bowling-Scorecard
             </div>
-            <div class="project">
+            <div className="project" onClick={() => {this.handleClick("/acebook")}}>
               Acebook-myspace
             </div>
-            <div class="project">
-              Twitter
+            <div className="project" onClick={() => {this.handleClick("/chitter")}}>
+              Chitter
             </div>
-            <div class="project">
+            <div className="project" onClick={() => {this.handleClick("/rps")}}>
               Rock Paper Scissors
             </div>
-            <div class="project">
+            <div className="project" onClick={() => {this.handleClick("/takeaway")}}>
               Takeaway-Service
             </div>
-            <div class="project">
+            <div className="project" onClick={() => {this.handleClick("/airport")}}>
               Airport
             </div>
           </div>
