@@ -2,19 +2,26 @@ h1 {
   text-align: center;
 }
 
-.grid-container {
-  display: grid;
-  height: 400px;
+
+.nested-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   align-content: center;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+  width: 50%
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
+.nested-container > div {
+  flex: 0 0 20%;
+  background-color: red;
+  margin: 10px;
+  padding: 20px;
   font-size: 30px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
 }
