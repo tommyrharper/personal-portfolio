@@ -88,3 +88,13 @@ Realising I had no idea what I was doing, and that I didn't actually need node-s
 I then changed ```app.scss``` to ```App.css```, and moved it so it is imported within the App component.
 
 Now I am ready to build it using a simple flex-box!
+
+## Dealing with routing
+
+```
+npm install --save react-router-dom
+```
+
+Then I created some new components - I created ```Home.js``` and ```Navigation.js```.
+
+Home.js is my homepage, and Navigation.js is my navigation bar at the top of the page.
