@@ -128,3 +128,7 @@ class Example extends React.Component {
 
 export default withRouter(Example);
 ```
+
+### Adding content
+
+Now I have my selection of projects available on the home page, I am going to fill in some content.
