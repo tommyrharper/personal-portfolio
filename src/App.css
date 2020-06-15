@@ -13,28 +13,34 @@ body {
   font-family: sans-serif;
   line-height: 1.4;
 }
+
 .projects-container {
   display: flex;
   justify-content: center;
 }
-.paddingBlock {
-  padding: 20px 0;
-  width: 50%;
-}
+
 .projects {
-  flex-wrap: wrap;
-  display: flex;
+  width: 65%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 3rem;
 }
+
 .project {
-  border-radius: 5px;
-	width: 32%;
-  margin: 1%;
+  border: 0.5px solid #d8d2d2;
   padding: 10px;
-  background: #0294A5;
+  border-radius: 15px;
 }
-.project:nth-of-type(3n) {
-	margin-right: 0;	
+
+.project:hover {
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
 }
-.project:nth-of-type(3n+1) {
-	margin-left: 0;	
+
+@media (min-width: 600px) {
+  .projects { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .projects { grid-template-columns: repeat(3, 1fr); }
 }
