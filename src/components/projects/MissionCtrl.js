@@ -17,14 +17,13 @@ class MissionCtrl extends React.Component {
       You can now learn them in our super fun game!
       <h3>Technology</h3>
       <h4>Front-end</h4>
-      React, HTML, CSS, Testing - Jest, Enzyme, Deployment - Surge
+      React, HTML, CSS, Sass, Testing - Jest, Enzyme, Deployment - Surge, Travis-CI/CD
       <h4>Back-end</h4>
-      Node, MongoDB, Mongoose, Deployemnt - Heroku
-      <h4>Testing</h4>
-      Jest, Enzyme, Chai
+      Node, MongoDB, Mongoose, Testing - Mocha, Chai, Sinon, Deployemnt - Heroku, Travis-CI/CD
       <img src="./images/Mission-CtrlStack.png" alt=""></img>
       <h3>Process</h3>
-      We used an AGILE process including
+      
+      We followed strict TDD and used AGILE processes including:
       <ul>
         <li>Sprints</li>
         <li>Morning Stand-up</li>
