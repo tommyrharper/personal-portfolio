@@ -15,6 +15,7 @@ class MissionCtrl extends React.Component {
       Over are the days of hopelessly coding without
       knowing the best and most useful shortcuts.
       You can now learn them in our super fun game!
+      <img src="./images/Mission-Ctrl-Demo-2.gif" alt=""></img>
       <h3>Technology</h3>
       <h4>Front-end</h4>
       React, HTML, CSS, Sass, Testing - Jest, Enzyme, Deployment - Surge, Travis-CI/CD
@@ -22,8 +23,8 @@ class MissionCtrl extends React.Component {
       Node, MongoDB, Mongoose, Testing - Mocha, Chai, Sinon, Deployemnt - Heroku, Travis-CI/CD
       <img src="./images/Mission-CtrlStack.png" alt=""></img>
       <h3>Process</h3>
-      
-      We followed strict TDD and used AGILE processes including:
+      Team values included learning over "getting it done", kindness and openness.
+      We followed strict TDD, maintaining high test coverage and used AGILE processes including:
       <ul>
         <li>Sprints</li>
         <li>Morning Stand-up</li>
