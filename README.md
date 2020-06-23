@@ -132,3 +132,10 @@ export default withRouter(Example);
 ### Adding content
 
 Now I have my selection of projects available on the home page, I am going to fill in some content.
+
+## Continuous Integration and Deployment
+
+I wanted to my website to have CI and CD. So I did the following:
+
+I created ```.travis.yml```
+Then I gave it the following code:
