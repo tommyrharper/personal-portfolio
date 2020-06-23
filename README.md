@@ -1,4 +1,8 @@
+[![Build Status](https://travis-ci.com/tommyrharper/personal-portfolio.svg?branch=master)](https://travis-ci.com/tommyrharper/personal-portfolio)
+
 # Personal Portfolio
+
+[Deployed here.](https://www.thomas-harper.com)
 
 This is my first attempt at creating my own personal website for two reasons:
 
