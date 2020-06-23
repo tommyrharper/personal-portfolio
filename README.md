@@ -135,7 +135,20 @@ Now I have my selection of projects available on the home page, I am going to fi
 
 ## Continuous Integration and Deployment
 
-I wanted to my website to have CI and CD. So I did the following:
+I wanted to my website to have CI and CD. I decided to use Travis-CI and Netifly for CD. So I did the following:
 
 I created ```.travis.yml```
 Then I gave it the following code:
+```yml
+language: node_js
+node_js:
+  - "stable"
+script:
+  - echo "Success!"
+  ```
+
+  This is a very simple set up. I ran into some complications with yarn and npm, and found I had to run:
+  ```
+  yarn
+  ```
+  And then delete ```package-lock.json``` and change my Build settings on Netlify for Build Command. I had to change it from ```yarn build``` to ```npm run-script build```.
